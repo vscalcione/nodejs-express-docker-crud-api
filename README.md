@@ -11,3 +11,33 @@ This project is made with some technologies:
 - ![MongoDB](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=google&utm_campaign=gs_emea_italy_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624533&gclid=CjwKCAjwo4mIBhBsEiwAKgzXOL9-XfdP5YxoaM2huoENTKl9UHJCcIeb8OOSmujoK8iBWOd81dovZhoCg4IQAvD_BwE)
 - ![Docker](https://www.docker.com/)
 - ![Rest APIs and Swagger](https://swagger.io/)
+
+## Build (dev env)
+To build in dev environment run this command:
+```bash
+$ npm run build
+```
+or
+```bash
+$ docker-compose -f docker/docker-compose.yml build
+```
+
+## Build (prod env)
+To build in production environment run this command:
+```bash
+$ npm run production
+```
+or 
+```bash
+$ docker-compose -f docker/docker-compose.yml up -d
+```
+
+## Test
+To execute tests, run this command:
+```bash
+$ npm run test
+```
+or
+```bash
+$ docker-compose -f docker/docker-compose.yml up --build --abort-on-container-exit
+```
