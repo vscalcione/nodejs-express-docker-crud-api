@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-express-docker-crud-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "production": "docker-compose -f docker/docker-compose.yml up -d",
+    "build": "docker-compose -f docker/docker-compose.yml build",
+    "test": "docker-compose -f docker/docker-compose.yml up --build --abort-on-container-exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongodb": "^4.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^9.0.3",
+    "supertest": "^6.1.4",
+    "tape": "^5.3.0"
+  }
+}
